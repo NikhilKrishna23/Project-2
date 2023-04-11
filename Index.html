@@ -1,0 +1,38 @@
+import Head from 'next/head';
+import Link from 'next/link';
+
+const Home = () => {
+  return (
+    <>
+      <Head>
+        <title>Non-Profit Marketing | Home</title>
+        <meta name="description" content="Helping non-profits create impactful marketing campaigns" />
+      </Head>
+      <header>
+        <nav>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
+        </nav>
+      </header>
+      <main>
+        <h1>Helping Non-Profits Make a Difference</h1>
+        <p>We believe in the power of marketing to create change in the world. Our team of experts is dedicated to helping non-profits create impactful campaigns that raise awareness, drive donations, and make a difference in the lives of those they serve.</p>
+        <Link href="/contact">
+          <a>Get in Touch</a>
+        </Link>
+      </main>
+      <footer>
+        <p>&copy; 2023 Non-Profit Marketing</p>
+      </footer>
+    </>
+  );
+};
+
+export default Home;
